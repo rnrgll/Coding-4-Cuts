@@ -45,6 +45,37 @@ main {
     height: 200px;
     /*이미지 크기 제어 : container에 맞게 적절히 제어*/
     background-size: cover;
+    /* descripton 위치 수정*/
+    position: relative;
+}
+/*photo-descriptoin 스타일링
+* 절대 position
+* 가운데 아래로 수정
+* 중앙 정렬 (transform, left)
+*
+
+* 배경 검은색, 글자 흰색
+*
+* 가로 너비 내부 콘텐츠에 맞게
+* padding : 상하 0, 좌우 20px
+* margin : 아래 10px
+
+* 경계선 둥글게
+*/
+.photo-description{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%); /*horizontal, x-coordinate*/
+    
+    background-color: black;
+    color: white;
+    
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    
+    border-radius: 10px;
 }
 
 /* 하단 영역 스타일링
