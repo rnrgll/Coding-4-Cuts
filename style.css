@@ -47,6 +47,8 @@ main {
     background-size: cover;
     /* descripton 위치 수정*/
     position: relative;
+    /*마우스가 사진 위로 올라가면 포인터 아이콘으로*/
+    cursor: pointer;
 }
 /*photo-descriptoin 스타일링
 * 절대 position
@@ -76,6 +78,9 @@ main {
     margin-bottom: 10px;
     
     border-radius: 10px;
+
+    /*초반에 페이지 열릴 때 기본으로 안 보이게 하기 위한 설정*/
+    opacity: 0;
 }
 
 /* 하단 영역 스타일링
@@ -164,3 +169,14 @@ footer{
     background-image: url("cat5.jpg");
     background-position: 60% 40%;
   }
+
+
+  /* 마우스 오버 효과 css*/
+  /* opacity : 불투명도를 의미, 0이면 안보임, 1이면 완전 잘보임*/
+.showText{
+   opacity: 1;
+   transition: opacity 0.5s linear;
+  }
+.hideText{
+    opacity: 0;
+}
