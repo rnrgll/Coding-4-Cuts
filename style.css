@@ -109,7 +109,16 @@ footer{
     font-weight: 900;
     color: white;
 }
-
+/* icon 스타일링
+* 색상 흰색
+* 글씨와 아이콘 사이 간격 10px
+*/
+.icon-white{
+    color: white;
+}
+.icon-size{
+    margin: 10px;
+}
 
 /* 날짜 스타일링
 * 폰트 중간 두께
