@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "KyoboHandwriting2021sjy";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2")
+      format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 폰트 적용
+  * margin 0
+  * 수평 가운데 정렬
+  * 배경색 수정
+  */
+body{
+    font-family: "KyoboHandwriting2021sjy";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+  /* 너비 390px
+  * 배경색 설정
+  * 높이 : 부모 높이만큼
+  */
+main {
+    width: 390px;
+    height: 100%;
+    background-color: rgb(10, 8, 12);
+} 
+
+/* 위로 margin 30px */
+.photos{
+    margin-top: 30px;
+}
+
+  /* 각 사진 fame에 대해
+  * 배경 흰색
+  * margin : 좌우 20px, 상하 15px
+  * 높이 200px
+  */
+.photo-frame{
+    background-color: white;
+    margin: 20px, 15px;
+    height: 200px;
+}
+
+/* 하단 영역 스타일링
+* flexible display
+* 세로 배열
+* 수평 가운데 정렬
+*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* footer-title 스타일링
+* flexible display
+* 가운데 정렬 (수평, 수직)
+*/
+.f-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*f-title의 제목 스타일링
+* 폰트 두껍게
+* 사이즈 25px
+* 색상 흰색
+*/
+.f-title > p{
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+}
+
+
+/* 날짜 스타일링
+* 폰트 중간 두께
+* 사이즈 15px
+* 색상 흰색
+*/
+.f-date{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+/* 만든이 스타일링
+* 폰트 중간 두께
+* 사이즈 12px
+* 색상 흰색
+*/
+.f-author{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
