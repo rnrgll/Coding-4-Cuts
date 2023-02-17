@@ -43,6 +43,8 @@ main {
     background-color: white;
     margin: 20px 15px;
     height: 200px;
+    /*이미지 크기 제어 : container에 맞게 적절히 제어*/
+    background-size: cover;
 }
 
 /* 하단 영역 스타일링
